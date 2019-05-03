@@ -58,16 +58,12 @@ multiply();
 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   var output1 = sum(a, b)[0];
-  console.log('output1 ' + output1);
   var output0 = sum(output1, c)[0];
-  console.log('output0 ' + output0);
   var output2 = multiply(a, b)[0];
-  console.log('output2 ' + output2);
   var output3 = multiply(output2, c)[0];
-  console.log('output3 ' + output3);
-  var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + output1 + '.';
-  var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + output2 + '.';
-  return [output1, message1, output2, message2];
+  var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + output0 + '.';
+  var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + output3 + '.';
+  return [output0, output3, message1, message2];
 
 }
 
